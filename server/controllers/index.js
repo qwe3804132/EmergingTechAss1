@@ -14,7 +14,7 @@ module.exports.displayProductsPage = (req, res, next) => {
   }
 
 module.exports.displayServicesPage = (req, res, next) => {
-    res.render('index', { title: 'Services' });
+    res.render('Services/index', { title: 'Services' });
   }
 
 module.exports.displayContactPage = (req, res, next) => {
