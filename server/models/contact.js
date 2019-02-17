@@ -8,7 +8,7 @@ let contactSchema = mongoose.Schema({
     emailAddress: String
 },
 {
-    collection: "first"
+    collection: "demo"
 });
 
 module.exports = mongoose.model('contact', contactSchema);
