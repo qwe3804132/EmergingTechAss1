@@ -26,13 +26,16 @@ let app = express();
 // view engine setup
 app.set('views', path.join(__dirname, '../views'));
 app.set('view engine', 'ejs');
-//app.set('pic', path.join(__dirname, '../media/pic'));
+app.set('media', path.join(__dirname, '../media'));
 
 
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
+//app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, '../../media')));
+
 app.use(express.static(path.join(__dirname, '../../public')));
 app.use(express.static(path.join(__dirname, '../../node_modules')));
 

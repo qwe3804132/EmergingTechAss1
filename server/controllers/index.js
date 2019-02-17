@@ -6,11 +6,11 @@ module.exports.displayHomePage = (req, res, next) => {
   }
 
 module.exports.displayAboutPage = (req, res, next) => {
-    res.render('index', { title: 'About' });
+    res.render('About/index', { title: 'About' });
   }
 
 module.exports.displayProductsPage = (req, res, next) => {
-    res.render('index', { title: 'Products' });
+    res.render('Products/index', { title: 'Products' });
   }
 
 module.exports.displayServicesPage = (req, res, next) => {
